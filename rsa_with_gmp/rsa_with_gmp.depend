@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1554794589 source:c:\users\user\desktop\new folder\rsa_with_gmp\main.c
+	<gmp.h>
+	<stdio.h>
+
+1035175204 c:\users\user\desktop\gmp demo\gmplib\gmp\include\gmp.h
+	<iosfwd>
+	<cstddef>
+	<stddef.h>
+

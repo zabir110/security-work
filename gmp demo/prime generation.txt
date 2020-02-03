@@ -1,0 +1,49 @@
+int PRIMESIZE;
+    cout<<"Enter No of bits for P and Q: ";
+    cin>>PRIMESIZE;
+
+
+    //P Q
+    char* p_str = new char[PRIMESIZE+1];
+    char* q_str = new char[PRIMESIZE+1];
+
+    p_str[0] = '1';
+    q_str[0] = '1';
+
+
+    for(int i=1; i<PRIMESIZE; i++)
+    {
+        p_str[i] = char((rand()%2)+48);
+        q_str[i] = char((rand()%2)+48);
+    }
+
+
+
+
+    p_str[PRIMESIZE] = '\0';
+    q_str[PRIMESIZE] = '\0';
+
+    mpz_set_str(p,p_str,2);
+    mpz_set_str(q,q_str,2);
+
+
+    mpz_nextprime(p,p);
+    mpz_nextprime(q,q);
+
+    //P Q
+
+
+    cout<<endl<<"p = ";
+    mpz_out_str(stdout,10,p);
+
+    cout<<endl<<endl<<"q = ";
+    mpz_out_str(stdout,10,q);
+
+
+
+///POWER
+mpz_powm(v,l,e,n);//v=(l^e) mod n
+
+///Division: l=s/r
+mpz_invert(r_inv,r,n);
+mpz_mul(l,s,r_inv);

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1554799336 source:c:\users\user\desktop\new folder\test_gmp\main.c
+	<gmp.h>
+	<stdio.h>
+
